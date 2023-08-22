@@ -8,5 +8,11 @@ public class EjercicioWhile {
             System.out.println("conteo = "+conteo);
             conteo++; //Vamos a aumentar en un uno la variable 
         }
+        
+        var contador = 0;
+        do{
+            System.out.println("contador = " + contador);
+            contador ++;
+        }while(contador < 7);
     }
 }
