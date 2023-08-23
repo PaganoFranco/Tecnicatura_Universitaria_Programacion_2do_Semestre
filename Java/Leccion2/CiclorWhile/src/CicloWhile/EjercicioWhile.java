@@ -17,6 +17,20 @@ public class EjercicioWhile {
         }while(contador < 7);
         //Ciclo For
         for(var contando = 0; contando < 7; contando++){
+             System.out.println("contando = " + contando);
+            }
+        //Rompe Ciclos - BRACK
+        for(var contando = 0; contando < 7; contando++){
+            if(contando % 2 ==0 ) {
+             System.out.println("contando = " + contando);
+             break;
+            }
+        }
+        //Rome Ciclos - BRACK
+        for(var contando = 0; contando < 7; contando++){
+            if(contando % 2 ==0 ) {
+             continue;
+            }
             System.out.println("contando = " + contando);
         }
     }
