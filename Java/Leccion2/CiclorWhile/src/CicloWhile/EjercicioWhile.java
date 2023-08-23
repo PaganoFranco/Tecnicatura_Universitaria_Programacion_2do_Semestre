@@ -19,7 +19,7 @@ public class EjercicioWhile {
         for(var contando = 0; contando < 7; contando++){
              System.out.println("contando = " + contando);
             }
-        //Rompe Ciclos - BRACK
+        //Rompe Ciclos - BRACK 
         for(var contando = 0; contando < 7; contando++){
             if(contando % 2 ==0 ) {
              System.out.println("contando = " + contando);
@@ -29,9 +29,25 @@ public class EjercicioWhile {
         //Rome Ciclos - BRACK
         for(var contando = 0; contando < 7; contando++){
             if(contando % 2 ==0 ) {
-             continue;
+             continue;//Vamos a la siguiente iteracion
             }
             System.out.println("contando = " + contando);
+        }
+        //Uso de etiquetas (Labels)
+        //Uso de las palabras break y continue en las etiquetas (labels)
+        inicio:
+        for(var contando1 = 0; contando1 < 7; contando1++){
+            if(contando1 % 2 ==0 ) {
+             System.out.println("contando1 = " + contando1);
+             break inicio;
+            }
+        }
+        inicio:
+        for(var contando2 = 0; contando2 < 7; contando2++){
+            if(contando2 % 2 ==0 ) {
+             continue inicio;//Vamos a la siguiente iteracion
+            }
+            System.out.println("contando2 = " + contando2);
         }
     }
 }
