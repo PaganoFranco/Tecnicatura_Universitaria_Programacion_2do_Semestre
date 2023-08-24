@@ -64,7 +64,48 @@ print(nombres)
 # Eleminar/borar/limpiar todos los elemtnos
 nombres.clear()
 print(nombres)
-
+"""
 # Eliminar la lista
 del nombres
-print(nombres) stat
+print(nombres)
+"""
+#------------------------------------------------------------------
+"""
+Ejericio N°1: Iterar un rango de 0 a 10 pero imprimir numeros divisibles entre 3.
+Ejemplo 0, 3, 6, 9 
+"""
+print("Rango de 0 a 10 con numeros divisibles entre 3")
+#Segun yo
+for i in range(10): #El erro es que un range(10) va del 0 al 9
+    if i % 3 == 0:
+        print(i)
+#Segun video
+for i in range(11):
+    if i % 3 == 0:
+        print(i)
+"""
+Ejercicio N°2: Crear un rango de numeros de 2 a 6 e imprimirlos
+Ejemplo: 2, 3, 4, 5, 6
+"""
+print("Rango con valores de inicio = 2 y fin = 6")
+# Segun yo
+for x in range(7):
+    if x > 1 :
+        print(x)
+#Segun video
+rango = range(2, 7)
+for i in rango:
+    print(i)
+"""
+Ejercicio N°3: Iterar un rango de 3 a 10 pero con incremento de 2 en 2 en 
+lugar de 1 en 1. Ejemplo 3, 5, 7, 9
+"""
+# Segun yo
+rango = range(3, 11)
+for y in rango:
+    if y % 2 != 0:
+        print(y)
+# Segun video
+print("El rango de inicio 3 y fin 10")
+for i in range(3, 11, 2):
+    print(i)
