@@ -109,3 +109,37 @@ for y in rango:
 print("El rango de inicio 3 y fin 10")
 for i in range(3, 11, 2):
     print(i)
+
+#-----------------------------------------------------------------------
+
+# Definimos una tupla
+cocina = ("cuchara", "cuchillo", "tenedor")
+print(cocina)
+print(len(cocina)) #Contamos la cantidad de elementos
+
+# Acceder a un elemento (debemos usar corchetes y no parentesis).
+print(cocina[0]) #Del primero al ultimo
+print(cocina[-1]) #Del ultimo al primero
+
+# Acceder a un rango
+print(cocina[0:2])
+
+# Recorremos los elementos de la tupla
+for cocinar in cocina:
+    print(cocinar) # esta usando \n para saltos de linea
+
+for cocinar in cocina:
+    print(cocinar, end= " ") # Elimina los saltos de linea
+
+# MODIFICAR UNA TUPLA
+# cocina[0] = "plato" //Recordar que esto no se puede
+# convertir de tupla a lista // Para poder modificarla
+cocinaLista = list(cocina)
+cocinaLista[0] = "Plato"
+# Convertir de lista a tupla
+cocina = tuple(cocinaLista)
+print("\n",cocina)
+
+
+
+
