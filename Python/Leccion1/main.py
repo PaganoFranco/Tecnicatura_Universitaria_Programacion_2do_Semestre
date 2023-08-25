@@ -140,6 +140,18 @@ cocinaLista[0] = "Plato"
 cocina = tuple(cocinaLista)
 print("\n",cocina)
 
+#---------------------------------------------------------------------
 
+# Ejercicio de tupla: Dada la siguiente tupla
+tupla = (13, 1, 8, 3, 2, 5, 8) # Definimos la tupla
+"""
+Crear una lista que solo incluya los numeros menores a 5
+e imrpima por consola [1, 3, 2]
+"""
 
-
+lista = [] # Definimos una lista vacia
+# Filtramos los elemenetos menores a 5 de la tupla
+for numero in tupla:
+    if numero < 5:
+        lista.append(numero)
+print(f"La nueva lista es: {lista}")
