@@ -155,3 +155,93 @@ for numero in tupla:
     if numero < 5:
         lista.append(numero)
 print(f"La nueva lista es: {lista}")
+
+#------------------------------------------------------
+# Tipo set (conjunto)
+planetas = {"Marte", "Jupiter", "Venus"}
+print(planetas)
+print(len(planetas)) #Usamos la guncion len = length significa largo
+
+# Revisamos si un elemento existe dentor de un set
+print("Marte" in planetas) #El elemento a buscar debe escribirse igual al de la lista
+
+# Revisamos si no existe un elemento dentro de un ser
+print("Saturno" not in planetas)
+
+# Agregar un elemento
+planetas.add("Tierra")
+print(planetas)
+
+# Eliminar elementos
+planetas.remove("Jupiter") # Puede arrojar error si el elemento no esta en la lista
+print(planetas)
+
+planetas.discard("Tierra")
+print(planetas)
+
+# limpiar set
+planetas.clear()
+print(planetas)
+
+#Eliminar set o conjunto
+"""
+del planetas
+print(planetas)
+"""
+# ---------------------------------------------------------------------------
+# DICCIONARIO
+# "Maradora":10 un diccionario esta compuesto de dos elementos asociados
+# Una LLAVE y un VALOR
+# dict{key, value}
+diccionario = {
+    "IDE" : "Integrate Development Eviroment",
+    "POO" : "Programacion Orientada a Objetos",
+    "SABD": "Sistema de adminitracion de Base de datos"
+}
+print(diccionario)
+print(len(diccionario))
+
+# Acceder a un diccionario con la llave(KEY)
+print(diccionario["IDE"])
+
+# Otra forma de recuperar un elemento
+print(diccionario.get("POO"))
+print(diccionario.get("SABD"))
+
+#Modificamos elementos
+diccionario["IDE"] = "Entorno de desarrollo Integrado"
+print(diccionario)
+
+# Como recorrer los elementos
+for termino in diccionario:
+    print(termino) # Solo accedemos a las llaves
+
+# Necesitamos una funcion para recorrer un diccionario
+for valor in diccionario.items():
+    print(termino, valor) # Accedemos a las llaves y al valor
+
+# Otras maneras de acceder a un diccionario
+for termino in diccionario.keys(): # Estamos usando una funcion KEYS
+    print(termino) # Muestra solo las llaves
+
+for valor in diccionario.values():  # Usamos una fucnion para acceder el valor
+        print(valor)  # visualiza los valores sin llaves
+
+print("IDE" in diccionario) # Devuelve un booleano
+
+# Comprobar la existencia de algun elemento
+
+# Agregar un elemento
+diccionario["PK"] = "Primary Key"
+print(diccionario)
+
+# Eliminar un elemento
+diccionario.pop("SABD")
+print(diccionario)
+
+# Eliminar todos los elementos
+diccionario.clear()
+print(diccionario)
+
+# Eliminar diccionario
+del diccionario # el diccionario se borro
