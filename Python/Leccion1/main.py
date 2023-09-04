@@ -279,3 +279,8 @@ print(lista3)
 lista3.sort(reverse=True)
 print(lista3)
 
+# Repaso tuplas
+tupla = (4, "hola", 6.3, [1, 2, 78], 4, "hola")
+print(tupla)
+
+print(4 in tupla) # Buscar un elementos
