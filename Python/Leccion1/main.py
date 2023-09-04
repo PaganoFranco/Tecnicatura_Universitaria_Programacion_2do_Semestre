@@ -1,5 +1,6 @@
 # lista = Elemento1, Elemento2, Elemento3, Elemento4
 """
+COLECCIONES EN PYTHON (LISTA o ARREGLO o VECTORES)
 Al crear una lista, los elementos toman posiciones como elementos de un conjunto.
 """
 nombres = ["Elemento1", "Elemento2", "Elemento3", "Elemento4"]
@@ -41,7 +42,13 @@ print(len(nombres)) # Len determina la cantidad de elementos del parametro (la l
 
 # Agregamos un elemento
 nombres.append("ElementoS")
+nombres.append([1, 2, 3])
+nombres.append(True)
+nombres.append([10.45])
+nombres.append([4, 5])
+nombres.append(7)
 print(nombres)
+# Una lista puede tener diferente tipos de elementos
 
 # insertar un elemento en un indice espesifico
 nombres.insert(1, "ElementoA") #Se agrega el elemento en dicha posicion, pero desplaza los demas a la derecha
@@ -217,7 +224,7 @@ for termino in diccionario:
     print(termino) # Solo accedemos a las llaves
 
 # Necesitamos una funcion para recorrer un diccionario
-for valor in diccionario.items():
+for termino, valor in diccionario.items():
     print(termino, valor) # Accedemos a las llaves y al valor
 
 # Otras maneras de acceder a un diccionario
@@ -242,6 +249,33 @@ print(diccionario)
 # Eliminar todos los elementos
 diccionario.clear()
 print(diccionario)
-
+"""
 # Eliminar diccionario
 del diccionario # el diccionario se borro
+"""
+
+# Concatenamos listas
+lista1 = [1, 2, 3, 1]
+lista2 = [4, 5, 6, 1]
+lista3 = lista1 + lista2
+print(lista3)
+
+lista3.extend([7, 8, 9, 1]) # Funcion para agregar varios elementos a una lista
+print(lista3)
+
+print(lista3.index(5)) # la funcion index nos indica el indice de su posicion en la lista
+# print(lista3.index(0)) # esto daria un error por no ser el elemento parte de la lista
+
+# como saber cuantos valores repetidos hay dentro de una lista
+print(lista3.count(1)) # cuenta cuantos valores iguales hay dentro de la lista
+
+# Para que una lista se multiplique repitiendo sus elementos
+lista = [1, 2, 3] * 2
+print(lista)
+
+# Metodo de ordenamiento
+lista3.sort()
+print(lista3)
+lista3.sort(reverse=True)
+print(lista3)
+
