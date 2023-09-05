@@ -19,5 +19,5 @@ public class Ejercicio04 {
         }
         JOptionPane.showMessageDialog(null,"El numero "+numero+" rompe el programa");
         JOptionPane.showMessageDialog(null,"La cantidad de numeros ingresados es: " + contador);
-    }S
+    }
 }
