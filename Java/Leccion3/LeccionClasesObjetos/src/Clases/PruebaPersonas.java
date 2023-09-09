@@ -12,5 +12,8 @@ public class PruebaPersonas {
         System.out.println("persona2 = " + persona2);
         System.out.println("persona1 = " + persona1);
         persona2.obtenerInformacion();
+        persona2.nombre = "Julieta";
+        persona2.apellido = "Quiroga";
+        persona2.obtenerInformacion();
     }
 }
