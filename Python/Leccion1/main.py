@@ -8,10 +8,10 @@ print(nombres)
 """
 Para recorrer del primer elemento al ultimo:
 """
-print(nombres[0]) #Podemos visualizar un elemento en espesifico de la lista
+print(nombres[0])  # Podemos visualizar un elemento en espesifico de la lista
 print(nombres[1])
 print(nombres[2])
-print(nombres[-1]) #podemos visualizar el ultimo elemento, sin saber cual es
+print(nombres[-1])  # podemos visualizar el ultimo elemento, sin saber cual es
 """
 Para recorrer del ultimo  elemento al primero:
 """
@@ -19,14 +19,14 @@ print(nombres[-1])
 print(nombres[-2])
 print(nombres[-3])
 
-#-----------------------------------------------------------------------
+# -----------------------------------------------------------------------
 nombres = ["Elemento1", "Elemento2", "Elemento3", "Elemento4"]
 print(nombres)
-print(nombres[0:2]) #Podemos visualizar los elementos dentro del rango nombres[0] y nombres[1]
-print(nombres[ :3]) #Podemos visualizar desde el primer elemento hasta el nombres[2]
-print(nombres[1: ]) #Podemos visualizar desde el nombres[1] hasta el ultimo
+print(nombres[0:2])  # Podemos visualizar los elementos dentro del rango nombres[0] y nombres[1]
+print(nombres[:3])  # Podemos visualizar desde el primer elemento hasta el nombres[2]
+print(nombres[1:])  # Podemos visualizar desde el nombres[1] hasta el ultimo
 
-#Modificar un valor dentro de la lista
+# Modificar un valor dentro de la lista
 nombres[3] = "ElementoX"
 print(nombres)
 
@@ -341,3 +341,31 @@ print(diccionarioNuevo)
 # Los diccionarios pueden almacenar diferentes tipos de datos
 diccionario2 = {"Ariel": {"Edad":40, "Altura":1.83}, "Osvaldo":[45,1.85], "Natalia":[35,1.67]}
 print(diccionario2)
+
+seleccionArgentina = {
+    10: {"Nombre": "Lionel Messi", "Edad": 35, "Altura": 1.70, "Precio": "50 Millones", "Posicion": "Extremo derecho"},
+    11: {"Nombre": "Angel Di Maria", "Edad": 34, "Altura": 1.80, "Precio": "17 Millones", "Posicion": "Extremo derecho"},
+    24: {"Nombre": "Paulo Dybala", "Edad": 28, "Altura": 1.77, "Precio": "35 Millones", "Posicion": "Media punta"},
+    19: {"Nombre": "Nicolas Otamendi", "Edad": 34, "Altura": 1.83, "Precio": "3.5 Millones", "Posicion": "Defensa Central"},
+    1: {"Nombre": "Franco Armani", "Edad": 35, "Altura": 1.89, "Precio": "3.5 Millones", "Posicion": "Portero"}
+}
+
+for llave, valor in seleccionArgentina.items():
+    print(llave,valor)
+# Como tarea agregar por lo menos 4 jugadores mas al diccionario: seleccionArgentina
+print("Tenemos cargados en el diccionario una cantidad de jugadores: ", end=" ")
+print(len(seleccionArgentina))
+
+# Agregamos jugadores
+seleccionArgentina[9]= {"Nombre": "Gonzalo Higuaín", "Edad": 34, "Altura": 1.84, "Precio": "25 Millones", "Posición": "Delantero"}
+seleccionArgentina[5]= {"Nombre": "Leandro Paredes", "Edad": 27, "Altura": 1.80, "Precio": "20 Millones", "Posición": "Centrocampista"}
+seleccionArgentina[17]= {"Nombre": "Nicolás Otamendi", "Edad": 34, "Altura": 1.83, "Precio": "15 Millones", "Posición": "Defensor"}
+seleccionArgentina[21] = {"Nombre": "Paulo Dybala", "Edad": 28, "Altura": 1.77, "Precio": "40 Millones", "Posición": "Delantero"}
+
+for llave, valor in seleccionArgentina.items():
+    print(llave,valor)
+print("Tenemos cargados en el diccionario una cantidad de jugadores: ", end=" ")
+print(len(seleccionArgentina))
+
+
+
