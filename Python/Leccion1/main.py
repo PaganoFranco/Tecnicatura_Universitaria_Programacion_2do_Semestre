@@ -329,3 +329,15 @@ print(conjunto1.isdisjoint(conjunto2)) #No poseen elementos en comun
 # Convertir un conjunto totalmente en inmutable
 conjunto1 = frozenset # Esto hace que el conjunto sea totalmente inmutable
 # No se puede agregar, modificar, eliminar elementos del conjunto
+
+# Repaso Diccionarios
+diccionarioNuevo = {"Azul" : "Blue", "Rojo" : "Red", "Amarillo": "Yellow"}
+print(diccionarioNuevo)
+
+# Como eliminar
+del(diccionarioNuevo["Azul"])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {"Ariel": {"Edad":40, "Altura":1.83}, "Osvaldo":[45,1.85], "Natalia":[35,1.67]}
+print(diccionario2)
