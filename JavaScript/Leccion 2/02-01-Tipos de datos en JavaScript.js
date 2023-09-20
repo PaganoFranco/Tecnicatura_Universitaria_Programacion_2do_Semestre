@@ -5,7 +5,11 @@ similar a la de Java realmente diria que es
 identica
 */
 var nombre = "Franco"; //Tipo Str
-console.log(nombre);
+console.log(typeof nombre);
+nombre = 7;
+console.log(typeof nombre);
+nombre = 12.3;
+console.log(typeof nombre)
 
 var numero = 3000; //Tipo numerico
 console.log(numero);
@@ -15,4 +19,4 @@ var objeto = {
     apellido : "Pagano",
     telefono: "2604694746"
 }
-console.log(objeto);
+console.log(typeof objeto);
