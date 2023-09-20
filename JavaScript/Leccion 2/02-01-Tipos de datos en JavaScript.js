@@ -20,3 +20,16 @@ var objeto = {
     telefono: "2604694746"
 }
 console.log(typeof objeto);
+
+//Tipo boolean
+var bandera = true;
+console.log(bandera);
+console.log(typeof bandera);
+
+//tipo de dato funcion (permite reutilizar lineas de codigo)
+function miFuncion(){}
+console.log(typeof miFuncion);
+
+//Tipo de datos symbol
+var simbolo = Symbol("Mi simbolo");
+console.log(simbolo);
