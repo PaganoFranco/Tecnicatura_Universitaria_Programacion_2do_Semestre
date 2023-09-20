@@ -54,3 +54,11 @@ console.log(x);
 var y = null; //No es un tipo de dato, pero su origen es object
 console.log(typeof y);
 
+//Tipo de dato array y Empty String
+var autos = ["Fiat","Ford","Peugeot","BMW"];
+console.log(autos);
+console.log(typeof autos);
+
+var z = "";
+console.log(z); //Cadena vacia
+console.log(typeof z);
