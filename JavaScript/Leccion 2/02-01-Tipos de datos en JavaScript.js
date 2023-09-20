@@ -43,3 +43,14 @@ class Persona{
 }
 console.log(typeof Persona);
 
+//Tipo de dato undefined
+var x;
+console.log(typeof x);
+
+x = undefined;
+console.log(x);
+
+// null: significa ausencia de valor
+var y = null; //No es un tipo de dato, pero su origen es object
+console.log(typeof y);
+
