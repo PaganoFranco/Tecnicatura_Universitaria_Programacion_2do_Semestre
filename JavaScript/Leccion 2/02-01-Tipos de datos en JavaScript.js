@@ -33,3 +33,13 @@ console.log(typeof miFuncion);
 //Tipo de datos symbol
 var simbolo = Symbol("Mi simbolo");
 console.log(simbolo);
+
+//Tipo de dato clase
+class Persona{
+    constructor(nombre,apellido){
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+}
+console.log(typeof Persona);
+
