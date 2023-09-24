@@ -12,6 +12,6 @@ public class PruebaAritmetica {
         System.out.println("resultado = " + resultado);
         
         resultado = aritmetica1.sumarConArgumentos(12, 26);
-        System.out.println("resultado = " + resultado);
+        System.out.println("resultado usando argumentos = " + resultado);
     }
 }
