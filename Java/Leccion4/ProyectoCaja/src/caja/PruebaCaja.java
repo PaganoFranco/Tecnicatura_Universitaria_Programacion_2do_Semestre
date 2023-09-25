@@ -6,7 +6,6 @@ La formula es: Volumen = ancho * alto * profundidad
 */
 package caja;
 
-import javax.swing.JOptionPane;
 
 public class PruebaCaja {
     public static void main(String[] args) { //Metodo main
