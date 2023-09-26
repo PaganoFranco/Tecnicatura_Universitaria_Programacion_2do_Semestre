@@ -17,3 +17,11 @@ persona2 = ("Oscar", "Pagano") # desempaquetamos a traves de una tupla
 show(*persona2)
 persona3 = {"name": "Franco", "lastName": "Pagano"}
 show(**persona3)
+
+number = [1, 2, 3, 4, 5]
+for n in number:
+    print(n)
+    if n == 3:
+        break # Esta es la unica manera de que no se ejecute el else
+else:
+    print("Esto se termino")
