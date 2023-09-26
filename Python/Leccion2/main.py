@@ -25,3 +25,16 @@ for n in number:
         break # Esta es la unica manera de que no se ejecute el else
 else:
     print("Esto se termino")
+
+# List comprehension, lista de comprension
+names = ["Paola", "Rodrigo", "Lupe", "Pepe"]
+alongP = [p for p in names if p[0] == "p"] # Este regresa una nueva lista
+print(alongP)
+
+buttleC = [{"name": "Quilnmes", "country" : "Arg"},
+            {"name": "Corona", "country" : "Mx"},
+            {"name": "Stella Artois", "country" : "Belgium"}
+           ]
+Arg = [b for b in buttleC if b["country"] == "Arg"]
+print(Arg)
+print(buttleC)
