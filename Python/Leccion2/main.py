@@ -38,3 +38,9 @@ buttleC = [{"name": "Quilnmes", "country" : "Arg"},
 Arg = [b for b in buttleC if b["country"] == "Arg"]
 print(Arg)
 print(buttleC)
+
+# Paso de Argumentos (funciones)
+def mi_funcion2(name, lastName):
+    print("Saludos a todos los que ven a traves del canar de YouTube")
+    print(f"Nombre: {name}, Apellido: {lastName}")
+mi_funcion2("Franco", "Pagano")
