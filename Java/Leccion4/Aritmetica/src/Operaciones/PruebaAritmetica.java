@@ -26,10 +26,24 @@ public class PruebaAritmetica {
         System.out.println("aritmetica2 = " + aritmetica2.b);
         // aritmetica1 = null; Tampoco se usa al final, ya que al final se limpia solo
         // System.gc(); Este comando es un recolector de basura (pero tampco se usa)
+        Persona persona = new Persona("Franco","Pagano");
+        System.out.println("persona nombre = " + persona.nombe);
+        System.out.println("persona apeliido = " + persona.apellido);
     }
-    
+    // Modularidad creamos un nuevo metodo
     public static void miMetodo(){
         int a = 10; //Una variable esta limitada 
         System.out.println("Aqui hay otro método");
+    }
+}
+
+
+class Persona{
+    String nombe;
+    String apellido;
+    
+    Persona(String nombre, String apellido){ //Constructor
+        this.nombe = nombre;
+        this.apellido = apellido;
     }
 }
