@@ -37,13 +37,26 @@ public class PruebaAritmetica {
     }
 }
 
-
+// Creamos una nueva clase
 class Persona{
     String nombe;
     String apellido;
     
     Persona(String nombre, String apellido){ //Constructor
+        super(); //Llamada al constructir de la clase padre object
         this.nombe = nombre;
         this.apellido = apellido;
+        System.out.println("Objeto persona usando this " + this);
+    }
+}
+
+class imprimir{
+    public imprimir(){
+        super(); //El constructor de la clase padre, para reservar memoria
+    }
+    
+    public void imprimir(Persona persona){
+        System.out.println("Persona desde la clase imprimir "+ persona);
+        System.out.println("Impresion del objeto actual (this): ");
     }
 }
