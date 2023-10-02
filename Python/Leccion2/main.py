@@ -71,3 +71,15 @@ def listarTerminos(**terminos): # lo mas utilizado es **kwargs para recibir los 
 listarTerminos() # No recibe nada, anda se va a mostrar
 listarTerminos(IDE = "Integrated Develoment Enviroment", PL = "Primaruy Key")
 listarTerminos(Nombre="Franco Pagano")
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+
+nombres2 = ["Titoi", "Pedor", "Carlos"]
+desplegarNombres(nombres2)
+desplegarNombres("Carla")
+# desplegarNombres(10, 11) # No es iterable
+desplegarNombres((10, 11)) # lo convertimos en tupla con dos elementos
+desplegarNombres([22, 55]) # Lo convertimos en una lista
+
