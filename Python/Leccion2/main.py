@@ -83,3 +83,13 @@ desplegarNombres("Carla")
 desplegarNombres((10, 11)) # lo convertimos en tupla con dos elementos
 desplegarNombres([22, 55]) # Lo convertimos en una lista
 
+# Funciones Recursivas
+def factorial(numero):
+    if numero == 1: # Caso Base
+        return 1
+    else:
+        return numero * factorial(numero -1) # Caso recursivo
+
+resultado = factorial(5)
+print(f"El factorial de 5 es: {resultado}")
+
