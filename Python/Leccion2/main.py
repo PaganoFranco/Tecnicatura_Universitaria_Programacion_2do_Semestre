@@ -62,4 +62,12 @@ print(f"El resultado de la suma es: {resultado}")
 def listarNombres(*nombres):
     for nombre in nombres:
         print(nombre)
-listarNombres("Franco", "Juli", "Milo", "Bruno")
+listarNombres("Franco", "Juli", "Milo", "Bruno", "Pepe")
+
+def listarTerminos(**terminos): # lo mas utilizado es **kwargs para recibir los argumentos
+    for llave, valor in terminos.items(): # kwargs significa: key word argument
+        print(f"{llave} : {valor}")
+
+listarTerminos() # No recibe nada, anda se va a mostrar
+listarTerminos(IDE = "Integrated Develoment Enviroment", PL = "Primaruy Key")
+listarTerminos(Nombre="Franco Pagano")
