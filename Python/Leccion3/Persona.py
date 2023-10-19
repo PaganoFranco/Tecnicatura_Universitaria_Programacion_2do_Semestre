@@ -20,3 +20,6 @@ persona1.nombre = "Viviana"
 persona1.apellido = "Pantaley"
 persona1.edad = 62
 print(f"El objeto de la clase persona1: {persona1.nombre} {persona1.apellido} su edad es {persona1.edad}")
+
+# Los atributos son: CARACTERISTICAS
+# Los metodos son: el comportameitno que van a tener los objetos (acciones)
