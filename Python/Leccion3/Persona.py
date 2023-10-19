@@ -5,6 +5,13 @@ class Persona:  # Creamos una clase
         self.edad = edad
 
 persona1 = Persona("Franco", "Pagano", 26)  # Necesitamos enviar argumentos
+"""
 print(persona1.nombre)
 print(persona1.apellido)
 print(persona1.edad)
+"""
+# Tarea hacer un print con interpolacion:
+print(f"El objeto de la clase persona1: {persona1.nombre} {persona1.apellido} su edad es {persona1.edad}")
+
+persona2 = Persona("Julieta","Quiroga",27)
+print(f"El objeto de la clase persona2: {persona2.nombre} {persona2.apellido} su edad es {persona2.edad}")
