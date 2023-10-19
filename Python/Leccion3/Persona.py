@@ -1,4 +1,10 @@
 class Persona:  # Creamos una clase
-    pass  # No se procesa nada mas (No tiene contenido"
+    def __init__(self):  # Se lo llama metodo INIT DUNDER
+        self.nombre = "Franco"
+        self.apellido = "Pagano"
+        self.edad = 26
 
-print(type(Persona))
+persona1 = Persona()  # Constructor
+print(persona1.nombre)
+print(persona1.apellido)
+print(persona1.edad)
