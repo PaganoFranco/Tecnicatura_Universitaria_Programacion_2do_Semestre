@@ -58,3 +58,7 @@ COMPARADOR RELACIONALES
 >
 >=
 <= 
+
+OPERADORES LOGICOS 
+And → && doble aspersan
+Or → || 
