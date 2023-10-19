@@ -31,3 +31,11 @@ console.log(_1num)
 // let break = "rompe"; No usar palabras reservadas en variables
 let _break = "rompe";
 console.log(_break)
+
+//Hoy ya no se usa var, se utiliza let y const
+let nombre2 = "Franco";
+console.log(nombre2);
+
+const apellido2 = "Pagano";
+//apellido2 = "Pantaley"; //una constante no puede ser modificada
+console.log(apellido2);
