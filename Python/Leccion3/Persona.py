@@ -15,3 +15,8 @@ print(f"El objeto de la clase persona1: {persona1.nombre} {persona1.apellido} su
 
 persona2 = Persona("Julieta","Quiroga",27)
 print(f"El objeto de la clase persona2: {persona2.nombre} {persona2.apellido} su edad es {persona2.edad}")
+
+persona1.nombre = "Viviana"
+persona1.apellido = "Pantaley"
+persona1.edad = 62
+print(f"El objeto de la clase persona1: {persona1.nombre} {persona1.apellido} su edad es {persona1.edad}")
