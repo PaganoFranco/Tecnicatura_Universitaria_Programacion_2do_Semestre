@@ -17,7 +17,7 @@ public class PersonaPrueba {
          // y imprimir, luego modificar sus valores y volver a imprimir. 
          
          //Orifinal
-         Persona persona2 = new Persona("Julieta",60.000,true);
+         Persona persona2 = new Persona("Julieta",60.0,true);
          System.out.println("Nombre persona2: "+ persona2.getNombre());
          System.out.println("Sueldo persona2: "+ persona2.getSueldo());
          System.out.println("Booleano persona 2: " +persona2.isEliminado());
@@ -30,6 +30,6 @@ public class PersonaPrueba {
          System.out.println("Sueldo modificado persona2: "+ persona2.getSueldo());
          System.out.println("Booleano modificado persona 2: " +persona2.isEliminado());
          
-         
+         System.out.println("persona1: "+persona1);
     }
 }
