@@ -30,6 +30,7 @@ public class PersonaPrueba {
          System.out.println("Sueldo modificado persona2: "+ persona2.getSueldo());
          System.out.println("Booleano modificado persona 2: " +persona2.isEliminado());
          
+         // Llamando al to.String();
          System.out.println("persona1: "+persona1);
     }
 }
