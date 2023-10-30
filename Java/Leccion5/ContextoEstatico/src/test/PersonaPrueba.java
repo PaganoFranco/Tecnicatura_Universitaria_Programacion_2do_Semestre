@@ -10,6 +10,12 @@ public class PersonaPrueba {
         System.out.println("persona1 = " + persona1);
         Persona persona2 = new Persona("Julieta");
         System.out.println("persona2 = " + persona2);
+        imprimir(persona1);
+        imprimir(persona2);
+    }
+    
+    static public void imprimir(Persona persona){
+        System.out.println("persona = " + persona);
     }
 }
  
