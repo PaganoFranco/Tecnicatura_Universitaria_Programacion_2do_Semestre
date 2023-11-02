@@ -9,7 +9,7 @@ public class Empleado extends Persona{
     
     //Constructores 
         //Constructores
-    public Empleado(){
+    public Empleado(){ //Constructor 1
         this.idEmpleado = ++Empleado.contadorEmpleados; 
     }
 
