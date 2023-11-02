@@ -14,5 +14,6 @@ public class teste {
         
         var resultado3 = Operaciones.sumar(8, 6L);
         System.out.println("resultado3 = " + resultado3);
+        //Utiliza el motodo double ya que puede soportar el valor LONG
     }
 }
