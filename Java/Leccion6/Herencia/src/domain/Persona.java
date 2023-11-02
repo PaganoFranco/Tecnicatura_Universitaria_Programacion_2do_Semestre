@@ -18,7 +18,7 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public Persona(String nombre, char gener, int edad, String direccion) {
+    public Persona(String nombre, char gener, int edad, String direccion) { //Construcor 3
         this.nombre = nombre;
         this.gener = gener;
         this.edad = edad;

@@ -8,10 +8,17 @@ public class Empleado extends Persona{
     
     
     //Constructores 
+        //Constructores
+    public Empleado(){
+        this.idEmpleado = ++Empleado.contadorEmpleados; 
+    }
 
     public Empleado(String nombre,double sueldo) {
-        super(nombre);
-        this.idEmpleado = ++Empleado.contadorEmpleados; 
+        //super(nombre);
+        this(); //De esta forma se llama al constructor interno (constuctor vacio)
+        this.nombre = nombre;
+        //De esta forma se puede usar super o this para el nombre (Pero no se pueden usar
+        //los dos a la ves)
         this.sueldo = sueldo;
     }
 
@@ -26,7 +33,7 @@ public class Empleado extends Persona{
     public void setSueldo(double sueldo) {
         this.sueldo = sueldo;
     }
-
+    
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
