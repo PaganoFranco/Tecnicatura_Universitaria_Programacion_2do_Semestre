@@ -59,7 +59,15 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", gener=" + gener + ", edad=" + edad + ", direccion=" + direccion + '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Persona{");
+        sb.append("nombre=").append(nombre);
+        sb.append(", gener=").append(gener);
+        sb.append(", edad=").append(edad);
+        sb.append(", direccion=").append(direccion);
+        sb.append(",").append(super.toString()); //Esto muestra el espacio de memoria
+        sb.append('}');
+        return sb.toString();
     }
-    
+
 }

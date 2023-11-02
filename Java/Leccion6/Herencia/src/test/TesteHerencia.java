@@ -13,5 +13,6 @@ public class TesteHerencia {
         //Cremos el objeto de la clase cliente
         Cliente cliente1 = new Cliente(new Date(), true, "Julieta", 'F', 27, "Av. Julio Roca 1801");
         System.out.println("cliente1 = " + cliente1);
+        //RECORDATORIO EL CHAR VA CON COMILLAS SIMPLES
     }
 }
