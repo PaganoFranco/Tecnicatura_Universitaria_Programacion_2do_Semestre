@@ -1,7 +1,7 @@
 
-package teste;
+package test;
 
-public class TesteArreglos {
+public class TestArreglos {
     public static void main(String[] args) {
         int edades [] = new int[3]; 
         //El lado izquiedo es donde declaramos la variable
