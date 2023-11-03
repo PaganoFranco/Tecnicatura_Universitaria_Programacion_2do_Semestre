@@ -17,7 +17,7 @@ public class TestArreglosObjetc {
         
         //Trabajamos con arreglos en la sintaxis resumida
         String frutas[] = {"Banana", "Pera", "Durazno"};
-        for(int i = 0; i < personas.length; i++){
+        for(int i = 0; i < frutas.length; i++){
             System.out.println("Frutas = "+frutas [i]);
         }
         
