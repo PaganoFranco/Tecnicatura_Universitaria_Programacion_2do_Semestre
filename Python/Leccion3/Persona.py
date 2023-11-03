@@ -4,7 +4,7 @@ class Persona:  # Creamos una clase
         self.apellido = apellido
         self.edad = edad
 
-    def mostrar_detalles(self):
+    def mostrar_detalles(self): # self es igual a this en java
         print(f"Persona: {self.nombre} {self.apellido} {self.edad}")
 
 
@@ -27,5 +27,7 @@ print(f"El objeto de la clase persona1: {persona1.nombre} {persona1.apellido} su
 
 # Los atributos son: CARACTERISTICAS
 # Los metodos son: el comportameitno que van a tener los objetos (acciones)
-persona1.mostrar_detalles()
+persona1.mostrar_detalles() # la refencia en este caso se pasa de manerea automatica
 persona2.mostrar_detalles()
+
+# Persona.mostrar_detalles(persona1) #Debemos pasarle una referencia para el self o dara error
