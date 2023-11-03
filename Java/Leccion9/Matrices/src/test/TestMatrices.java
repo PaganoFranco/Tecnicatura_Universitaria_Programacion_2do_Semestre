@@ -21,9 +21,21 @@ public class TestMatrices {
         System.out.println("edades 2 * 0 = " + edades[2][0]);
         System.out.println("edades 2 * 1 = " + edades[2][1]);
         
-        
+        System.out.println("Recorremos la matris por medio del ciclo for");
         for (int fila = 0; fila < edades.length; fila++) {
             for (int col = 0; col < edades[fila].length; col++) {
+                System.out.println("edades " + fila+"-"+col+ ": " + edades[fila][col]);
+            }
+            
+        }
+        
+        //Sintaxis clasicas
+        //String frutas [][] = new String[3][2];
+        
+        //Sintaxis simplificada
+        String frutas[][] = {{"Limones", "Pomelos"}, {"ciruela", "kiwi"}, {"Banana", "Manzana"}};
+        for (int fila = 0; fila < frutas.length; fila++) {
+            for (int col = 0; col < frutas[fila].length; col++) {
                 System.out.println("edades " + fila+"-"+col+ ": " + edades[fila][col]);
             }
             
