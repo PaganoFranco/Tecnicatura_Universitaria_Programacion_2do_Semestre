@@ -31,3 +31,7 @@ persona1.mostrar_detalles() # la refencia en este caso se pasa de manerea automa
 persona2.mostrar_detalles()
 
 # Persona.mostrar_detalles(persona1) #Debemos pasarle una referencia para el self o dara error
+persona1.telefono = "2604694746"
+print(f"este es el telefono de {persona1.nombre}: {persona1.telefono} ")
+
+# print(persona2.telefono) " El objeto persona 2 no tiene este atributo
