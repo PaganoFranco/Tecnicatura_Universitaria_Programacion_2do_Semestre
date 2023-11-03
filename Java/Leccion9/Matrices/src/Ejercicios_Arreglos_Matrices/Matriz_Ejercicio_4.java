@@ -2,7 +2,7 @@
 Ejercicio 4: crear una matriz de tamañop 7x7 y rellenarla de forma que los
 elementos de la digonal sean 1 y el resto 0
 */
-package arreglos_ejercicio_1;
+package Ejercicios_Arreglos_Matrices;
 
 import java.util.Scanner;
 

@@ -2,7 +2,7 @@
 Ejercicio 1: Leer 5 numeros, guardarlos en un arreglo y mostrarlos
 en el mismo orden introducidos.
 */
-package arreglos_ejercicio_1;
+package Ejercicios_Arreglos_Matrices;
 
 import javax.swing.JOptionPane;
 

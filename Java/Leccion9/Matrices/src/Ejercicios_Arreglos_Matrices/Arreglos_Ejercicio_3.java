@@ -3,7 +3,7 @@ Ejercicio 3: Leer 5 numeros por teclado, almacenarlos en un arreglo
 y a continuacion realizar la media de los numeros positivos, la media
 de los negativos y contar el numero de ceros.
 */
-package arreglos_ejercicio_1;
+package Ejercicios_Arreglos_Matrices;
 
 import javax.swing.JOptionPane;
 

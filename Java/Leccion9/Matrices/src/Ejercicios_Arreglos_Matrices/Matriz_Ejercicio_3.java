@@ -2,7 +2,7 @@
 Ejercicio 3: Crear y cargar una matriz de 3x3, transponerla 
 y mostrarla
 */
-package arreglos_ejercicio_1;
+package Ejercicios_Arreglos_Matrices;
 
 import java.util.Scanner;
 
