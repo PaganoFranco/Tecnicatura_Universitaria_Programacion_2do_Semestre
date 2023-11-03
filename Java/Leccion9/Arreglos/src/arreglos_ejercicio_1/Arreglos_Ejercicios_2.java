@@ -1,22 +1,20 @@
 /*
-Ejercicio 1: Leer 5 numeros, guardarlos en un arreglo y mostrarlos
-en el mismo orden introducidos.
+Ejercicio 2: Leer 5 numeros, guardados en un arreglo y
+mostrarlo en el orden inverso al introducido.
 */
 package arreglos_ejercicio_1;
 
 import javax.swing.JOptionPane;
 
-
-public class Arreglos_Ejercicio_1 {
+public class Arreglos_Ejercicios_2 {
     public static void main(String[] args) {
         int numeros[] = new int[5];
         for(int i = 0; i < numeros.length; i++){
             numeros[i] = Integer.parseInt(JOptionPane.showInputDialog("Introduce un número"));
         }
         JOptionPane.showConfirmDialog(null,"Los numeros son: ");
-        for(int i = 0; i < numeros.length; i++){
+        for(int i = 4; i >= 0 ; i--){
             JOptionPane.showConfirmDialog(null, (numeros[i]));
         }
     }
-    
 }
