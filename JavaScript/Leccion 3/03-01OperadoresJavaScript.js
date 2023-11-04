@@ -38,5 +38,23 @@ else{
 //Operador ternario
 let resultado2 = 3 > 2 ? "Verdadero" : "False"
 console.log(resultado2);
-let numero = 9;
+let numero1 = 12;
+resultado2 = numero2 % 2 == 0 ? "Es un numero PAR" : "Es un numero IMPAR"
 console.log(resultado2);
+
+
+//Convertir String a numero
+let miNumero = "10";
+console.log(typeof miNumero);
+let edad2 = Number(miNumero);
+console.log(typeof edad2);
+if(edad2 >= 18){
+    console.log("Ouede votar");
+} 
+else {
+    console.log("Muy joven para votar");
+}
+
+let resultado3 = edad2 >= 18 ? "Puede votar" : "Muy joven para votar";
+console.log(resultado3);
+
