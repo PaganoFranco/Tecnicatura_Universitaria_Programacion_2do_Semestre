@@ -34,3 +34,9 @@ if(vacaciones || diaDescanso){
 else{
     console.log("El padre no puede asistir al juego de su hijo")
 }
+
+//Operador ternario
+let resultado2 = 3 > 2 ? "Verdadero" : "False"
+console.log(resultado2);
+let numero = 9;
+console.log(resultado2);
