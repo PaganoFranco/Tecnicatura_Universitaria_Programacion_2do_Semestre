@@ -48,13 +48,20 @@ let miNumero = "10";
 console.log(typeof miNumero);
 let edad2 = Number(miNumero);
 console.log(typeof edad2);
-if(edad2 >= 18){
-    console.log("Ouede votar");
-} 
+if(isNaN(edad2)){ //No es un numero = is not a number
+    console.log("Esta variable no contiene solo numeros")
+}
 else {
-    console.log("Muy joven para votar");
+    if(edad2 >= 18){
+        console.log("Ouede votar");
+    } 
+    else {
+        console.log("Muy joven para votar");
+    }
 }
 
 let resultado3 = edad2 >= 18 ? "Puede votar" : "Muy joven para votar";
 console.log(resultado3);
+
+//Funcion isNaN
 
