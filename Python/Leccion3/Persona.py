@@ -41,3 +41,4 @@ print(f"este es el telefono de {persona1.nombre}: {persona1.telefono} ")
 persona3 = Persona("Franco", "Pagano", 40219256, 26, "Tefelono", "2604694746", "Calle Av Pagano", 857, "Manzana", 4, "Casa", 18, Altura = 1.83, Perso = 110, CFavorito = "Rojo", Modelo = 2023)
 persona3.mostrar_detalles()
 # print(persona3._dni) Esto no se puede utilizar
+# persona3.__nombre # Esta totalmente encapsulado
