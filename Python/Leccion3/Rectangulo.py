@@ -12,7 +12,7 @@ class Rectangulo:
     # Metodo para sumar
     def area(self):
         return self.base * self.altura
-    
+
 
 base = int(input("Ingrese el valor de la base: "))
 altura = int(input("Ingrese el valor de la altura: "))
