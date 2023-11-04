@@ -1,11 +1,13 @@
 class Persona:  # Creamos una clase
-    def __init__(self, nombre, apellido, edad):  # Se lo llama metodo INIT DUNDER
+    def __init__(self, nombre, apellido, edad, *args, **kwargs):  # Se lo llama metodo INIT DUNDER
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
+        self.args = args
+        self.kwargs = kwargs
 
     def mostrar_detalles(self): # self es igual a this en java
-        print(f"Persona: {self.nombre} {self.apellido} {self.edad}")
+        print(f"La clase Persona tiene los siguientes datos: {self.nombre} {self.apellido} {self.edad}, la direccion es: {self.args}, los datos importantes son: {self.kwargs}")
 
 
 persona1 = Persona("Franco", "Pagano", 26)  # Necesitamos enviar argumentos
@@ -35,3 +37,5 @@ persona1.telefono = "2604694746"
 print(f"este es el telefono de {persona1.nombre}: {persona1.telefono} ")
 
 # print(persona2.telefono) " El objeto persona 2 no tiene este atributo
+persona3 = Persona("Franco", "Pagano", 26, "Tefelono", "2604694746", "Calle Av Pagano", 857, "Manzana", 4, "Casa", 18, Altura = 1.83, Perso = 110, CFavorito = "Rojo", Modelo = 2023)
+persona3.mostrar_detalles()
