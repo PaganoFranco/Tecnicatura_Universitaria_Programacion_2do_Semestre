@@ -1,16 +1,17 @@
 class Persona:  # Creamos una clase
-    def __init__(self, nombre, apellido, edad, *args, **kwargs):  # Se lo llama metodo INIT DUNDER
+    def __init__(self, nombre, apellido, dni, edad, *args, **kwargs):  # Se lo llama metodo INIT DUNDER
         self.nombre = nombre
         self.apellido = apellido
+        self.dni = dni # Este atributo esta encapsulado de una manera sugerida
         self.edad = edad
         self.args = args
         self.kwargs = kwargs
 
     def mostrar_detalles(self): # self es igual a this en java
-        print(f"La clase Persona tiene los siguientes datos: {self.nombre} {self.apellido} {self.edad}, la direccion es: {self.args}, los datos importantes son: {self.kwargs}")
+        print(f"La clase Persona tiene los siguientes datos: {self.nombre} {self.apellido} {self.dni} {self.edad}, la direccion es: {self.args}, los datos importantes son: {self.kwargs}")
 
 
-persona1 = Persona("Franco", "Pagano", 26)  # Necesitamos enviar argumentos
+persona1 = Persona("Franco", "Pagano", 40219256, 26)  # Necesitamos enviar argumentos
 """
 print(persona1.nombre)
 print(persona1.apellido)
@@ -19,7 +20,7 @@ print(persona1.edad)
 # Tarea hacer un print con interpolacion:
 print(f"El objeto de la clase persona1: {persona1.nombre} {persona1.apellido} su edad es {persona1.edad}")
 
-persona2 = Persona("Julieta", "Quiroga", 27)
+persona2 = Persona("Julieta", "Quiroga", 39834579, 27)
 print(f"El objeto de la clase persona2: {persona2.nombre} {persona2.apellido} su edad es {persona2.edad}")
 
 persona1.nombre = "Viviana"
@@ -37,5 +38,6 @@ persona1.telefono = "2604694746"
 print(f"este es el telefono de {persona1.nombre}: {persona1.telefono} ")
 
 # print(persona2.telefono) " El objeto persona 2 no tiene este atributo
-persona3 = Persona("Franco", "Pagano", 26, "Tefelono", "2604694746", "Calle Av Pagano", 857, "Manzana", 4, "Casa", 18, Altura = 1.83, Perso = 110, CFavorito = "Rojo", Modelo = 2023)
+persona3 = Persona("Franco", "Pagano", 40219256, 26, "Tefelono", "2604694746", "Calle Av Pagano", 857, "Manzana", 4, "Casa", 18, Altura = 1.83, Perso = 110, CFavorito = "Rojo", Modelo = 2023)
 persona3.mostrar_detalles()
+# print(persona3._dni) Esto no se puede utilizar
