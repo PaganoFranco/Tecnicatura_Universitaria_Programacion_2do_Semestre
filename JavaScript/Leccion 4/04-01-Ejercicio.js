@@ -67,6 +67,25 @@ if (mes == 1 || mes == 2 || mes == 3){
 }
 console.log(estacion);
 
+switch(mes){
+    case 1: case 2: case 12:
+        estacion = "VERANO";
+        break;
+    case 3: case 4: case 5:
+        estacion = "OTOÑO";
+        break;
+    case 6: case 7: case 8:
+        estacion = "INVIERNO";
+        break;
+    case 9: case 10: case 11:
+        estacion = "PRIMAVERA";
+        break;
+    default:
+        estacion = "Valor incorrecto";
+    }
+
+    console.log(estacion);
+
 //Ejercicio 2: Hora del dia 
 let hora = 8;
 let mensaje; 
