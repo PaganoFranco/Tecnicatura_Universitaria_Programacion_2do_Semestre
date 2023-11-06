@@ -50,3 +50,21 @@ console.log(fechaNacimiento);
 fechaNacimiento = 1996;
 console.log(fechaNacimiento); //Solo se ejecuta la consola anterior
 
+// Clase 10 
+//Ejercicio 1: Calcular estacion del año
+let mes = 4;
+let estacion; 
+if (mes == 1 || mes == 2 || mes == 3){
+    estacion = "Verano";
+} else if (mes == 3 || mes == 4 || mes == 5){
+    estacion == "Otoño";
+} else if(mes == 6 || mes == 7 || mes == 8){
+    estacion = "Invierno";
+} else if (mes == 9 || mes == 10 || mes == 11){
+    estacion  == "Primavera"
+} else {
+    estacion = "Valor incorrecto"
+}
+console.log(estacion)
+
+//Ejercicio 2: Hora del dia 
