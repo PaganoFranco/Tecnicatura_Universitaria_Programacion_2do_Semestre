@@ -65,6 +65,21 @@ if (mes == 1 || mes == 2 || mes == 3){
 } else {
     estacion = "Valor incorrecto"
 }
-console.log(estacion)
+console.log(estacion);
 
 //Ejercicio 2: Hora del dia 
+let hora = 8;
+let mensaje; 
+if(hora >= 6 && hora <= 11){
+    mensaje == "MAÑANA";
+} else if (hora >= 12 && hora <= 18){
+    mensaje == "TARDE";
+} else if (hora >= 18 && hora <= 21){
+    mensaje ="NOCHE";
+} else if (hora >= 21 && hora <= 23){
+    mensaje = "DORMIR"
+} else {
+    mensaje = "Valor incorrecto"
+}
+
+console.log(mensaje);
