@@ -1,0 +1,64 @@
+Sintaxis similares entre java y JavaScript
+
+OPERADORES SIMPLIFICADOS
++=
+-=
+*=
+/=
+
+OPERADORES ARITNMETICOS
++
+-
+*
+/
+% //Residuo
+** //Expoente
+
+OPERADIRES DE ASIGNACION
+=
+
+OPERADORES DE COMPARACION
+== Revisa el valor sin importar el tipo
+=== Revisa el valor y el tipo tambien // Este opperador se lo llama igualdad estricta 
+
+DOCUMENTAR
+// = Para una linea de comentarios
+/* */ = Para multiples lineas de comentarios
+
+SECUENCIAS DE ESCAPE
+\' = Mostrar una comilla simple dentor de una cadena en la salida de informacion
+\" = Mostrar una comilla doble dentro de una cadena de salida
+\\ = Barra invertida, digonal inversa, es para mostrar una black slash
+\n = Salto de linea
+\r = Retorno
+\t = Tabulacion
+\b = Retroceso
+\f = Salto de paguina
+
+OPERADOR DE AUMENTO
+++ 
+
+OPERADOR DE DECREMENTO
+--
+
+OPERADOR DE INCREMENTO 
+Ejemplo: let z = ++a; //PreIncremento
+Ejemplo: z = a++; //PostIncrementos
+
+OPERADOR DE DECREMENTO
+Ejemplo: let z = --a; //PreDecremento
+Ejemplo: z = a--; //PostDecrementos
+
+OPERADOR  DISTINTO (distinto)
+!= //Compara valor
+!== //Compara valor y tipo
+
+COMPARADOR RELACIONALES
+<
+>
+>=
+<= 
+
+OPERADORES LOGICOS 
+And → && doble aspersan
+Or → || 
